@@ -59,7 +59,7 @@ Temos alguns tipos de operadores:
     - '+' também é utilizado para realizar concatenações
 - Operadores Relacionais
     - utilizados para realizar comparações entre variáveis
-    - **Observação:** cuidado com o __Case Sensitive__, pois ao utilizarmos o '===' para compararmos valor e formato das variáveis ele também identifica se há diferença no tamanho das letras, ou seja, ele diferencia letra minúscula de letra maiúscula. Exemplo: ```let texto = "felipe"``` -- ```console.log(texto === "Felipe")``` == ```false```
+    - **Observação:** cuidado com o __Case Sensitive__, pois ao utilizarmos o '===' para compararmos valor e formato das variáveis ele também identifica se há diferença no tamanho das letras, ou seja, ele diferencia letra minúscula de letra maiúscula. Exemplo: ```let texto = "felipe"``` ```console.log(texto === "Felipe")``` a resposta será ```false```
 - Operadores Lógicos
     - utilizados para determinar se algo atende as suas condições ou não
     - boolean(true ou false)
