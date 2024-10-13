@@ -40,10 +40,10 @@ Por boas práticas, armazenamos números como telefone, cpf e entre outros como 
     - ```nomesPokemon.length``` //Retorna a quantidade de posições do array
     - Temos diferenças entre as funções apresentadas acima, enquanto pop e shift são métodos, o length é uma propriedade. Dentro de IDE's como o Visual Studio Code, por exemplo, é possível diferenciá-los(métodos e propriedades) pelo ícone que fica na sua frente.
 ### Matrizes
-- Declarando e atribuindo valores a um vetor:
+- Declarando e atribuindo valores a uma matriz:
     - ```let timePokemon = [["pikachu", "M", 1], ["charmander", "F", 3]]```
     - Criamos uma matriz 2x3, ou seja, ela possui 2 linhas e 3 colunas
-- Assim como no vetor, para buscar por um valor específico é necessário passar a sua posição/índice, no caso de uma matriz igual a que criamos seriam 2 posições/índices, sendo uma representando a linha e a outra a coluna em que o valor se encontra:
+- Assim como no vetor, para buscar por um valor específico é necessário passar a sua posição/índice, no caso de uma matriz igual a que criamos no exemplo acima seriam 2 posições/índices, sendo uma representando a linha e a outra a coluna em que o valor se encontra:
     - ```console.log("O pokemon " + timePokemon[1][0] + " é do sexo " + timePokemon[1][1] + " e está no nível " + timePokemon[1][2]);```
     - No exemplo apresentado acima o console irá apresentar a resposta: "O pokemon charmander é do sexo F e está no nível 3"
 #
