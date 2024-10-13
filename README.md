@@ -75,6 +75,6 @@ Temos alguns tipos de operadores:
 - ```let resultado = 2 * (5 + 5 - 10)```
     - **resultado** = 0
 ######
-Através dos exemplos é possível perceber que o escopo interfere diretamente no resultado da expressão, isso se deve por conta da ordem seguida na matemática que a multiplicação e divisão vem antes de adição e subtração. Por isso, é necessário ter muita atenção na hora desenvolver expressões matemáticas no código.
+Através dos exemplos é possível perceber que o escopo interfere diretamente no resultado da expressão, isso se deve por conta da ordem seguida na matemática, na qual a multiplicação e divisão vem antes de adição e subtração. Por isso, é necessário ter muita atenção na hora desenvolver expressões matemáticas no código.
 #
 [**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=bd2a3b0673664c6d977a0686ba0d86cd&pm=c)
