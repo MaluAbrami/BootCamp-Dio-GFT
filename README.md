@@ -17,6 +17,11 @@ São imutáveis, não podem ter seu valor alterado
 - Number: armazena ***números***
     - Exemplo: ```nivelPokemon = 20```
 - Boolean: armazena variáveis lógicas como ***true*** e ***false***
-    - Exemplo: ```selecionavel = true;```
+    - Exemplo: ```selecionavel = true```
+#
+Por boas práticas, armazenamos números como telefone, cpf e entre outros como tipo string, pois não faremos nenhuma operação matemática com eles. Além disso sendo do tipo string podemos utilizar caracteres especiais.
+- Exemplo: ```let numeroTelefone = "(11)984713388"```
+#
+**Observação:** Em JavaScript não é obrigatório tipar suas variáveis
 #
 [**Para mais informações**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=4fdc1ae1745a4b2b819d12cb4f51aaa1&pm=c)
