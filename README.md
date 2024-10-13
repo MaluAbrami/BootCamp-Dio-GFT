@@ -25,3 +25,17 @@ Por boas práticas, armazenamos números como telefone, cpf e entre outros como 
 **Observação:** Em JavaScript não é obrigatório tipar suas variáveis
 #
 [**Para mais informações**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=4fdc1ae1745a4b2b819d12cb4f51aaa1&pm=c)
+
+# Vetores e Matrizes
+### Vetores
+- Declarando e atribuindo valores a um vetor:
+    - ```let nomesPokemon = ["pikachu", "charmander", "bulbasaur"]```
+- Para poder buscar por um valor específico dentro do vetor é necessário passar a sua posição/índice:
+    - ```console.log(nomesPokemon[0])```
+    - No exemplo apresentado acima, o nome que vai aparecer no console será "pikachu", que é o valor que está na posição/índice 0
+    - Observação: Todo vetor começa na posição/índice 0
+- Podemos utilizar várias funções, alguns exemplos são:
+    - ```nomesPokemon.pop()``` //Remove o último elemento do array
+    - ```nomesPokemon.shift()``` //Remove o primeiro elemento do array
+#
+[Para mais informações sobre arrays em JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
