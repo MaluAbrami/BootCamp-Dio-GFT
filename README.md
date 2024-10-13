@@ -50,3 +50,21 @@ Por boas práticas, armazenamos números como telefone, cpf e entre outros como 
 [**Para mais informações sobre arrays em JavaScript**](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
 ####
 [**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=1f6b429fcc5e4bf9b274d8d75e909faa&pm=c)
+
+# Operadores e Expressões
+Temos alguns tipos de operadores:
+- Operadores Aritméticos
+    - são os matemáticos
+    - utilizados para realizar cálculos
+    - '+' também é utilizado para realizar concatenações
+- Operadores Relacionais
+    - utilizados para realizar comparações entre variáveis
+- Operadores Lógicos
+    - utilizados para determinar se algo atende as suas condições ou não
+    - boolean(true ou false)
+- Operadores de Atribuição
+    - utilizados para atribuir valor as variáveis/constantes
+- Operadores de Incremento e Decremento
+    - utilizados para aumentar e diminuir um valor
+#
+[**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=bd2a3b0673664c6d977a0686ba0d86cd&pm=c)
