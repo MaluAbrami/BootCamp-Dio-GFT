@@ -80,6 +80,16 @@ Através dos exemplos é possível perceber que o escopo interfere diretamente n
 #
 [**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=bd2a3b0673664c6d977a0686ba0d86cd&pm=c)
 
+# Estruturas Condicionais
+### **if**
+- verifica uma condição e apenas executa seus comandos quando ela é atendida
+### **else**
+- ele executa seus comandos quando o 'if' não é atendido
+### **else if**
+- utilizado para que seja possível realizar uma segunda pergunta após o 'if' e antes do 'else'
+- chamado de ***if encadeado***
+[**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=c5bc44e4b81448a1bb443713e498f016&pm=c)
+
 # Desafios de Código
 ## Jornada Do Herói
 Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp da GFT pela Dio:
