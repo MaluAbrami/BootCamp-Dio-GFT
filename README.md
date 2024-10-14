@@ -88,12 +88,13 @@ Através dos exemplos é possível perceber que o escopo interfere diretamente n
 ### **else if**
 - utilizado para que seja possível realizar uma segunda pergunta após o 'if' e antes do 'else'
 - chamado de ***if encadeado***
+#
 [**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=c5bc44e4b81448a1bb443713e498f016&pm=c)
 
 # Desafios de Código
 ## Jornada Do Herói
 Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp da GFT pela Dio:
-- O método 'parseInt()' converte a parte incial da string em um número inteiro, contudo ele tem alguns casos que é necessária atenção, já que ele apenas converte uma string em número se for válido. Entre os seus **casos válidos** estão:
+- O método **parseInt()** converte a parte incial da string em um número inteiro, contudo ele tem alguns casos que é necessária atenção, já que ele apenas converte uma string em número se for válido. Entre os seus **casos válidos** estão:
 - ```const posicaoInicial = parseInt("10")``` Irá converter para o número 10
 - ```const posicaoInicial = parseInt("    10")``` Aqui será 10 também, pois esse método ignora os espaços na string
 - ```const posicaoInicial = parseInt("10abc")``` Aqui também será 10, pois como o 10 é a parte inicial da string, esse método ignora o resto depois de 10 que seja inválido, que seriam os caracteres 'abc'
@@ -101,3 +102,11 @@ Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp
 - Já entre os seus **casos inválidos** estão:
 - ```const posicaoInicial = parseInt("abc")``` Aqui ele não converterá para número inteiro, pois não há nenhum valor válido na string
 - ```const posicaoInicial = parseInt("abc10")``` Aqui ele também não irá realizar a conversão, pois a parte inicial da string que é 'abc' é inválido, portanto ele já determina a string inválida para conversão e não considera o '10'
+- Por conta dos casos inválidos do 'parseInt()' eu utilizei o **isNaN()**, que serve para verificar se o valor não é um número
+- Exemplo utilizado no Desafio: 
+```
+if( isNaN(posicaoInicial) || isNaN(totalPassos)){
+    console.log("Erro: entrada inválida")
+}
+```
+- No exemplo acima, verificamos se os valores não são números e caso eles não sejam números significa que a entrada informada pelo usuário era inválida(caso inválido para o parseInt). Então apresentamos a mensagem de erro, mas caso esse if esteja errado e os valores sejam números, então ele vai executar o restante do código do desafio.
