@@ -79,3 +79,15 @@ Temos alguns tipos de operadores:
 Através dos exemplos é possível perceber que o escopo interfere diretamente no resultado da expressão, isso se deve por conta da ordem seguida na matemática, na qual a multiplicação e divisão vem antes de adição e subtração. Por isso, é necessário ter muita atenção na hora de desenvolver expressões matemáticas no seu código.😉
 #
 [**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=bd2a3b0673664c6d977a0686ba0d86cd&pm=c)
+
+# Desafios de Código
+## Jornada Do Herói
+Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp da GFT pela Dio:
+- O método 'parseInt()' converte a parte incial da string em um número inteiro, contudo ele tem alguns casos que é necessária atenção, já que ele apenas converte uma string em número se for válido. Entre os seus **casos válidos** estão:
+- ```const posicaoInicial = parseInt("10")``` Irá converter para o número 10
+- ```const posicaoInicial = parseInt("    10")``` Aqui será 10 também, pois esse método ignora os espaços na string
+- ```const posicaoInicial = parseInt("10abc")``` Aqui também será 10, pois como o 10 é a parte inicial da string, esse método ignora o resto depois de 10 que seja inválido, que seriam os caracteres 'abc'
+- ```const posicaoInicial = parseInt("10.3")``` Aqui também será 10, pois mesmo que a entrada seja um número decimal, esse método apenas converte para número inteiros, portanto ele ignora o restante que seria o '3'
+- Já entre os seus **casos inválidos** estão:
+- ```const posicaoInicial = parseInt("abc")``` Aqui ele não converterá para número inteiro, pois não há nenhum valor válido na string
+- ```const posicaoInicial = parseInt("abc10")``` Aqui ele também não irá realizar a conversão, pois a parte inicial da string que é 'abc' é inválido, portanto ele já determina a string inválida para conversão e não considera o '10'
