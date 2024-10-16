@@ -91,6 +91,34 @@ Através dos exemplos é possível perceber que o escopo interfere diretamente n
 #
 [**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=c5bc44e4b81448a1bb443713e498f016&pm=c)
 
+# Estruturas de Decisão
+## Switch-case
+Utilizado frequentemente quando há a necessidade de testar vários casos de uma variável. Tem uma função semelhante ao if-else, sendo basicamente uma solução alternativa para melhorar o seu código, sem a necessidade de criar vários if encadeados. Temos um exemplo de código switch logo abaixo:
+```
+switch(fruta){
+    case "laranja":{
+        console.log("suco de laranja");
+        break;
+    }
+    case "banana":
+    case "morango":{ 
+        console.log("vitamina de " + fruta);
+        break; 
+    }
+    case "maçã":{
+        console.log("suco de maçã");
+        break;
+    }
+    default:{ 
+        console.log("suco genérico");
+    }
+}
+```
+- 'Break': Impede uma execução em sequência de vários casos, ele basicamente para a execução do switch depois de executar o caso determinado pela variável.
+- 'Default': Quando nenhum dos outros casos do switch acontecem, é executado o caso 'default', ou seja, ele é bem semelhante ao 'else'. Lembrando que ele não é obrigatório na criação de um switch.
+#
+[**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=490c02cf6ccb4368afc3dc131fe04f2a&pm=c)
+
 # Desafios de Código
 ## Jornada Do Herói
 Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp da GFT pela Dio:
