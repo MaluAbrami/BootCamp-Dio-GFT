@@ -119,6 +119,46 @@ switch(fruta){
 #
 [**Para mais informações da aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=490c02cf6ccb4368afc3dc131fe04f2a&pm=c)
 
+# Estruturas de Repetição
+### **For**
+- No exemplo abaixo, ele vai repetir 10 vezes os mesmos comandos, acumulando pontos de vida e imprimindo a mensagem do número na poção que está sendo tomada na repetição atual
+- Exemplo de código:
+```
+let pontosDeVida = 0;
+
+for(let i = 1; i <= 10; i++){
+    pontosDeVida += 1; //Acumulando pontos de vida
+    console.log("Tomou poção mágica " + i);
+}
+
+console.log(pontosDeVida + " Totais");
+```
+### **While**
+- No exemplo abaixo, ele vai imprimir a palavra "ola" 3 vezes, pois a cada repetição vai somar 1 ao contador e dessa forma ele vai chegar a atingir a condição necessária para a parada
+- Exemplo de código:
+```
+let contador = 0;
+
+while(contador < 3){
+    console.log("ola");
+    contador++;
+}
+```
+### **Do While**
+- O exemplo abaixo é igual ao exemplo utilizado no 'while' anteriormente, porém a diferença é que no 'do while' os comandos vão ser executados pelo menos 1 vez, independente da condição, pois ele primeiro executa e depois avalia a condição
+- Portanto, mesmo que o contador já fosse 3 ou maior que 3 e não garantisse a condição solicitada, ainda assim ele iria imprimir a mensagem e somar 1 ao contador pelo menos uma vez
+- Exemplo de código:
+```
+let cont = 0;
+
+do{
+    console.log("ola");
+    contador++;
+} while(contador < 3);
+```
+#
+[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=98796f56714649808b69cf8d45c88a4b&pm=c)
+
 # Desafios de Código
 ## Jornada Do Herói
 Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp da GFT pela Dio:
