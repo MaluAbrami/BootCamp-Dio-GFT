@@ -160,7 +160,7 @@ do{
 [**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=98796f56714649808b69cf8d45c88a4b&pm=c)
 
 # Funções
-Ter funções no seu código são importantes para manter o código organizado. Além disso, elas facilitam a correção de erros no código, já que cada função realiza uma tarefa específica, dessa forma é mais fácil de descobrir aonde está o erro, você precisa apenas observar o que deu errado e ir até a função que é responsável por esse trabalho. 
+Ter funções no seu código são importantes para manter o código organizado. Elas também facilitam a correção de erros no código, já que cada função realiza uma tarefa específica, dessa forma é mais fácil de descobrir aonde está o erro, você precisa apenas observar o que deu errado e ir até a função que é responsável por esse trabalho. Além disso, as funções podem ser reutilizadas em outros códigos, pois são uma pequena parte que realizam uma tarefa específica que pode ser reutilizada em vários contextos.
 - Para declarar os nomes das suas funções é só utilizar das mesmas regras que usamos para decclaração de variáveis, como por exemplo: sem começar com números, sem espaço caso seja mais de uma palavra, usar o camelCase, etc
 - Lembre de sempre manter o bloco de código dentro das funções identados, isso torna seu código mais legivel para outros programadores e até para você mesmo poder revisar futuros erros
 - Fique com o exemplo prático de funções abaixo:
