@@ -190,10 +190,10 @@ A utilização da função main() acima é útil para chamarmos todas as funçõ
 [**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6b3c1a2a3e154fb08893b8644a0c679a&pm=c)
 
 # Funções com passagem de parâmetros
-- Os parâmetros(variáveis) que são passadoos na função existem somente na função
+- Os parâmetros(variáveis) que são passados na função existem somente na função
 - Qual variável(let) declarada dentro da função também existe somente dentro da função
 - Você pode adicionar quantos parâmetros quiser na sua função, mas o ideal é não ter muitos por função e caso seja necessário é melhor dividir uma função em duas funções
-- Quando sua função pede um parâmetro e na chamada da função não é passado nenhum valor para esse parâmetro, ele fica como __undefined__. Porém, se você não queira que fique declarado como __undefined__, você pode definir um valor padrão para esse parâmetro, como um valor __default__. No exemplo abaixo temos "Cliente" como um valor default do parâmetro **nome**.
+- Quando sua função pede um parâmetro e na chamada da função não é passado nenhum valor para esse parâmetro, ele fica como __undefined__. Porém, caso você não queira que fique declarado como __undefined__, você pode definir um valor padrão para esse parâmetro, como um valor __default__. No exemplo abaixo temos "Cliente" como um valor default do parâmetro **nome**.
 ```
 function torrar(pao, nome = "Cliente", valor){
     console.log("Torrada feita com " + pao);
