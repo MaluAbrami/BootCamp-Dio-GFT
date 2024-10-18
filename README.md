@@ -178,3 +178,18 @@ if( isNaN(posicaoInicial) || isNaN(totalPassos)){
 }
 ```
 - No exemplo acima, verificamos se os valores não são números e caso eles não sejam números significa que a entrada informada pelo usuário era inválida(caso inválido para o parseInt). Então apresentamos a mensagem de erro, mas caso esse if esteja errado e os valores sejam números, então ele vai executar o restante do código do desafio.
+## Pontos de Experiência
+Assim como no último desafio(jornada do herói), nesse também havia o parseInt(), que é utilizado para converter uma string em um número inteiro, então  também foi necessário que eu utilizasse o **isNaN()** para verificar se a conversão funcionou ou não, ou seja, verificar se não são números e caso não fossem eu apresento uma mensagem de erro ao usuário. Além disso, nesse desafio eu precisei garantir que a variável ```num2``` fosse um número inteiro entre 1 a 100 por isso adicionei um ```else if``` ao código, fique com a parte do código abaixo:
+```
+if(isNaN(num1) || isNaN(num2)){ 
+  console.log("Erro: entrada inválida!");
+}
+else if(num2 < 1 || num2 > 100){ 
+   console.log("Erro: a dificuldade da batalha só pode ser um número inteiro entre 1 a 100");
+}
+else{
+  const xpGanho = num1 * num2 * 100;
+  
+  console.log("Voce ganhou " + xpGanho + " XP!");
+}
+```
