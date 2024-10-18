@@ -217,6 +217,25 @@ connect:DBCONNECT;user=Felipe;pass=9876;initial_database=db_products
 ```
 [**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6d66bf3dd4074a8eae993687f8df020e&pm=c)
 
+# Funções com retorno
+Basicamente quando as funções vão nos dar algum retorno como algum valor ou objeto, como vetores e matrizes por exemplo.
+- Sempre deve-se retornar apenas 1 valor ou 1 objeto por vez
+- Você pode criar uma variável dentro da função para poder receber o valor que ela irá retornar, como no exemplo abaixo:
+```
+function soma(numA, numB){
+    let somatorio = numA + numB;
+    return somatorio;
+}
+```
+- Mas você também pode fazer o retorno diretamente, como no exemplo abaixo em que retorna a operação de subtração diretamente:
+```
+function subtracao(numA, numB){
+    return numA - numB;
+}
+```
+#
+[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6ce06a8b5cc04835b63d2ac55804f0da&pm=c)
+
 # Desafios de Código
 ## Jornada Do Herói
 Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp da GFT pela Dio:
