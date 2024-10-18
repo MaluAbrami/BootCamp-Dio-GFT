@@ -190,6 +190,7 @@ A utilização da função main() acima é útil para chamarmos todas as funçõ
 [**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6b3c1a2a3e154fb08893b8644a0c679a&pm=c)
 
 # Funções com passagem de parâmetros
+- Quando uma função possui parâmetros, é porque ela precisa de valores específicos para executar seus comandos
 - Os parâmetros(variáveis) que são passados na função existem somente na função
 - Qual variável(let) declarada dentro da função também existe somente dentro da função
 - Você pode adicionar quantos parâmetros quiser na sua função, mas o ideal é não ter muitos por função e caso seja necessário é melhor dividir uma função em duas funções
