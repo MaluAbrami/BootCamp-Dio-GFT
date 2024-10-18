@@ -159,6 +159,36 @@ do{
 #
 [**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=98796f56714649808b69cf8d45c88a4b&pm=c)
 
+# Funções
+Ter funções no seu código são importantes para manter o código organizado. Além disso, elas facilitam a correção de erros no código, já que cada função realiza uma tarefa específica, dessa forma é mais fácil de descobrir aonde está o erro no códig, você precisa apenas observar o que deu errado e ir até a função que é responsável por esse trabalho. 
+- Para declarar os nomes das suas funções é só utilizar das mesmas regras que usamos para decclaração de variáveis, como por exemplo: sem começar com números, sem espaço caso seja mais de uma palavra, usar o camelCase, etc
+- Lembre de sempre manter o bloco de código dentro das funções identados, isso torna seu código mais legivel para outros programadores e até para você mesmo poder revisar futuros erros
+- Fique com o exemplo prático de funções abaixo:
+```
+function main(){
+    getData();
+    checkValues();
+    sendToDataBase();
+}
+
+function getData(){ 
+    console.log("\nPegando dados do usuário");
+}
+
+function checkValues(){
+    console.log("Validando dados");
+}
+
+function sendToDataBase(){
+    console.log("Cadastrando dados");
+}
+
+main(); //chamando a função principal que chama todas as outras
+```
+A utilização da função main() acima é útil para chamarmos todas as funções no mesmo lugar, dessa forma realizamos apenas a chamada da função main e ela já chama todas as outras, esse função main() em muitas linguagens é uma função padrão.
+#
+[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6b3c1a2a3e154fb08893b8644a0c679a&pm=c)
+
 # Desafios de Código
 ## Jornada Do Herói
 Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp da GFT pela Dio:
