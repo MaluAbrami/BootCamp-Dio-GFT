@@ -270,3 +270,33 @@ else{
   console.log("Voce ganhou " + xpGanho + " XP!");
 }
 ```
+## Capturando Pokemon Inicial
+Assim como nos últimos desafios(jornada do herói e pontos de experiência), nesse também havia o parseInt(), que é utilizado para converter uma string em um número inteiro, então  também foi necessário que eu utilizasse o **isNaN()** para verificar se a conversão funcionou ou não, ou seja, verificar se não são números e caso não fossem eu apresento uma mensagem de erro ao usuário. Além disso, nesse desafio eu optei por substituir o encadeamento de vários **else_if** por um **switch**, dessa forma número de 'case' correspondia ao respectivo número de cada pokemon que foi apresentado na tabela do desafio, também adicionei um 'default' ao meu switch para casos em que o número selecionado não correspondesse ao número de nenhum dos pokemons iniciais. Fique com o switch utilizado no meu código do desafio logo abaixo:
+```
+if ( isNaN(escolhaDoTreinador)){ 
+  console.log("Erro: escolha inválida!");
+} 
+else{ 
+  switch(escolhaDoTreinador){ 
+    case 1:{
+      pokemonEscolhido = "Bulbasaur";
+      break;
+    }
+    case 2:{
+      pokemonEscolhido = "Charmander";
+      break;
+    }
+    case 4:{
+      pokemonEscolhido = "Pikachu";
+      break;
+    }
+    case 5:{
+      pokemonEscolhido = "Mewtwo";
+      break;
+    }
+    default:{
+      console.log("Não há nenhum Pokemon correspondente ao número escolhido!");
+    }
+  }
+}
+```
