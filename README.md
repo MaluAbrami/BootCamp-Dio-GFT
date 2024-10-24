@@ -159,6 +159,83 @@ do{
 #
 [**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=98796f56714649808b69cf8d45c88a4b&pm=c)
 
+# Funções
+Ter funções no seu código são importantes para manter o código organizado. Elas também facilitam a correção de erros no código, já que cada função realiza uma tarefa específica, dessa forma é mais fácil de descobrir aonde está o erro, você precisa apenas observar o que deu errado e ir até a função que é responsável por esse trabalho. Além disso, as funções podem ser reutilizadas em outros códigos, pois são uma pequena parte que realizam uma tarefa específica que pode ser reutilizada em vários contextos.
+- Para declarar os nomes das suas funções é só utilizar das mesmas regras que usamos para decclaração de variáveis, como por exemplo: sem começar com números, sem espaço caso seja mais de uma palavra, usar o camelCase, etc
+- Lembre de sempre manter o bloco de código dentro das funções identados, isso torna seu código mais legivel para outros programadores e até para você mesmo poder revisar futuros erros
+- Fique com o exemplo prático de funções abaixo:
+```
+function main(){
+    getData();
+    checkValues();
+    sendToDataBase();
+}
+
+function getData(){ 
+    console.log("\nPegando dados do usuário");
+}
+
+function checkValues(){
+    console.log("Validando dados");
+}
+
+function sendToDataBase(){
+    console.log("Cadastrando dados");
+}
+
+main(); //chamando a função principal que chama todas as outras
+```
+A utilização da função main() acima é útil para chamarmos todas as funções no mesmo lugar, dessa forma realizamos apenas a chamada da função main e ela já chama todas as outras, esse função main() em muitas linguagens é uma função padrão.
+#
+[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6b3c1a2a3e154fb08893b8644a0c679a&pm=c)
+
+# Funções com passagem de parâmetros
+- Quando uma função possui parâmetros, é porque ela precisa de valores específicos para executar seus comandos
+- Os parâmetros(variáveis) que são passados na função existem somente na função
+- Qual variável(let) declarada dentro da função também existe somente dentro da função
+- Você pode adicionar quantos parâmetros quiser na sua função, mas o ideal é não ter muitos por função e caso seja necessário é melhor dividir uma função em duas funções
+- Quando sua função pede um parâmetro e na chamada da função não é passado nenhum valor para esse parâmetro, ele fica como __undefined__. Porém, caso você não queira que fique declarado como __undefined__, você pode definir um valor padrão para esse parâmetro, como um valor __default__. No exemplo abaixo temos "Cliente" como um valor default do parâmetro **nome**.
+```
+function torrar(pao, nome = "Cliente", valor){
+    console.log("Torrada feita com " + pao);
+    console.log("ela é um pedido de " + nome);
+    console.log("O valor total é " + valor);
+}
+```
+### Interpolação de Strings
+A interpolação de strings é basicamente quando usamos variáveis dentro do nosso texto. Para isso em JavaScript é necessário deixar o texto dentro de crases e com um **$** na frente de chaves **{}**, dentro dessas chaves é aonde digitamos a variável. Com isso, é possível imprimir mensangens sem a necessidade de fazer várias concatenações. Fique com o exemplo abaixo:
+```
+function createStringConnection(databaseName, user, pass){
+    console.log(`\nconnect:DBCONNECT;user=${user};pass=${pass};initial_database=${databaseName}`);
+}
+
+createStringConnection("db_products", "Felipe", "9876");
+```
+Resposta do console:
+```
+connect:DBCONNECT;user=Felipe;pass=9876;initial_database=db_products
+```
+[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6d66bf3dd4074a8eae993687f8df020e&pm=c)
+
+# Funções com retorno
+Basicamente quando as funções vão nos dar algum retorno como algum valor ou objeto, como vetores e matrizes por exemplo.
+- Sempre deve-se retornar apenas 1 valor ou 1 objeto por vez
+- Você pode criar uma variável dentro da função para poder receber o valor que ela irá retornar, como no exemplo abaixo:
+```
+function soma(numA, numB){
+    let somatorio = numA + numB;
+    return somatorio;
+}
+```
+- Mas você também pode fazer o retorno diretamente, como no exemplo abaixo em que retorna a operação de subtração diretamente:
+```
+function subtracao(numA, numB){
+    return numA - numB;
+}
+```
+#
+[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6ce06a8b5cc04835b63d2ac55804f0da&pm=c)
+
 # Desafios de Código
 ## Jornada Do Herói
 Algumas das minhas anotações sobre esse desafio de código que fiz no bootcamp da GFT pela Dio:
@@ -178,3 +255,18 @@ if( isNaN(posicaoInicial) || isNaN(totalPassos)){
 }
 ```
 - No exemplo acima, verificamos se os valores não são números e caso eles não sejam números significa que a entrada informada pelo usuário era inválida(caso inválido para o parseInt). Então apresentamos a mensagem de erro, mas caso esse if esteja errado e os valores sejam números, então ele vai executar o restante do código do desafio.
+## Pontos de Experiência
+Assim como no último desafio(jornada do herói), nesse também havia o parseInt(), que é utilizado para converter uma string em um número inteiro, então  também foi necessário que eu utilizasse o **isNaN()** para verificar se a conversão funcionou ou não, ou seja, verificar se não são números e caso não fossem eu apresento uma mensagem de erro ao usuário. Além disso, nesse desafio eu precisei garantir que a variável ```num2``` fosse um número inteiro entre 1 a 100 por isso adicionei um ```else if``` ao código, fique com a parte do código abaixo:
+```
+if(isNaN(num1) || isNaN(num2)){ 
+  console.log("Erro: entrada inválida!");
+}
+else if(num2 < 1 || num2 > 100){ 
+   console.log("Erro: a dificuldade da batalha só pode ser um número inteiro entre 1 a 100");
+}
+else{
+  const xpGanho = num1 * num2 * 100;
+  
+  console.log("Voce ganhou " + xpGanho + " XP!");
+}
+```
