@@ -233,6 +233,56 @@ function subtracao(numA, numB){
     return numA - numB;
 }
 ```
+
+# Estrutura de Dados JSON
+O significado de JSON é JavaScript Object Notation, pois ele é uma notação de objetos em JavaScript. Ele é um objeto simples composto por chave e valor que tem como objetivo transferir dados. Ele também é utilizado em outras linguagens, como uma comunicação unniversal.
+- **Exemplo sem utilizar JSON:**
+```
+let name = "Felipe";
+let age = 28;
+let products = ["mouse 2xwm", "teclado mecânico", "monitor"];
+let productsValues = [29.90, 129.99, 899.99];
+
+generateInvoice(name, age, products, productsValues);
+
+function generateInvoice(name, age, products, productsValues){
+    console.log("O comprador é " + name);
+    console.log("A idade é " + age);
+    console.log("------------------------");
+    console.log("O produto é " + products[0]);
+    console.log("O valor é " + productsValues[0]);
+}
+```
+- **Exemplo utilizando JSON:**
+```
+let invoice = {
+    name: "Felipe",
+    age: 28,
+    products: {
+        0: ["mouse 2xwm", 29.90],
+        1: ["teclado mecânico", 129.99],
+        2: ["monitor", 899.99],
+        3: ["tv de 100 polegadas", 10000.90]
+    }
+}
+
+generateInvoice(invoice);
+
+function generateInvoice(invoice){
+    console.log(`O comprador é ${invoice.name}`);
+    console.log(`A idade é ${invoice.age}`);
+    console.log("-------------------------");
+
+    for(let index in invoice.products){
+        let [productName, productPrice] = invoice.products[index];
+        console.log(`- ${productName}: R$ ${productPrice}`);
+    }
+}
+```
+É possível perceber a diferença quando não utilizamos o JSON e quando utilizamos, basicamente ele facilita muito na prática já que ele serve para determinarmos um padrão para um objeto, dessa forma fica muito mais fácil de adicionar novos valores ao objeto sem  a necessidade de alterar nada no código, apenas é necessário adicionar os novos valores dentro da estrutura de dados JSON em questão. Além disso, uma grande diferença que foi possível de perceber foi a questão de que quando utilizamos o JSON, não precisamos criar e declarar várias variáveis, apenas declaramos a variável da nossa estrutura JSON e dentro dele adicionamos suas chaves e seus respectivos valores.
+#
+[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=8bfc6eeb6b2f4e888d7457402351f953&pm=c)
+
 #
 [**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6ce06a8b5cc04835b63d2ac55804f0da&pm=c)
 
