@@ -283,8 +283,29 @@ function generateInvoice(invoice){
 #
 [**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=8bfc6eeb6b2f4e888d7457402351f953&pm=c)
 
+# Classes e Objetos
+- **Classe**: serve para padronizar o formato de uma estrutura de dados, possibilitando uma maior facilidade na criação de objetos. Além de guardar informações, ela também possui comportamentos(funções). Além disso, a utilização de classes torna o seu código muito mais reutilizável e organizado, já que uma mesma classe pode ser utilizada em várias partes do seu código.
+**Exemplo no Código**:
+```
+class formaDeBolo{
+    constructor(saborDaMassa, saborRecheio){
+        this.saborDaMassa = saborDaMassa;
+        this.saborRecheio = saborRecheio;
+    }
+
+    escrever(){
+        console.log(`Um delicioso bolo de ${this.saborDaMassa} com recheio de ${this.saborRecheio}`);
+    }
+}
+```
+- **Objeto**: mantêm o formato padrão da sua classe, porém implementa propriedades próprias e diferentes. Além disso, um objeto também pode ter métodos inteligentes, como funções próprias. 
+**Exemplo no Código**:
+```
+let boloFesta = new formaDeBolo("chocolate", "nutella");
+let boloPremium = new formaDeBolo("baunilha", "coco");
+```
 #
-[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=6ce06a8b5cc04835b63d2ac55804f0da&pm=c)
+[**Para mais informações sobre a aula da Dio**](https://helpful-jump-17b.notion.site/Mapa-de-aventura-91f3e9bd923842149d4dba754dc65c07?p=5cd5de91c7794142948140819ae4b9cc&pm=c)
 
 # Desafios de Código
 ## Jornada Do Herói
